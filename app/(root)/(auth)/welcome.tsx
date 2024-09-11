@@ -17,7 +17,7 @@ const Onboarding = () => {
     >
       <TouchableOpacity
         onPress={() => {
-          router.replace('/(auth)/create-account');
+          router.replace('/(auth)/sign-up');
         }}
         className={'flex w-full justify-end items-end p-5'}
       >
@@ -70,7 +70,7 @@ const Onboarding = () => {
         title={isLastSlide ? 'Get Started' : 'Next'}
         onPress={() =>
           isLastSlide
-            ? router.replace('/(auth)/create-account')
+            ? router.replace('/(auth)/sign-up')
             : swiperRef.current?.scrollBy(1)
         }
         className={'w-11/12 mt-10'}
